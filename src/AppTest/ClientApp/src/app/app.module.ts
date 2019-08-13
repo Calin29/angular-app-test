@@ -10,9 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
-// Added by The Wizard
-import { CowListComponent } from './cows/cow_list/cow_list.component';
-import { CowAddComponent } from './cows/cow_add/cow_add.component';
+import { CowListComponent } from './cows/cow-list/cow-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +21,6 @@ import { CowAddComponent } from './cows/cow_add/cow_add.component';
     FetchDataComponent,
 // Added by The Wizard
     CowListComponent,
-    CowAddComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,9 +30,7 @@ import { CowAddComponent } from './cows/cow_add/cow_add.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-// Added by The Wizard
-      { path: 'cows/cow_add', component: CowAddComponent },
-      { path: 'cows/cow_list', component: CowListComponent }
+      { path: 'cows/cow-list', component: CowListComponent }
     ])
   ],
   providers: [],

@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Cow } from './cow.model';
 
 @Component({
-  selector: 'app_cow_list',
-  templateUrl: './cow_list.component.html',
+  selector: 'app-cow-list',
+  templateUrl: './cow-list.component.html',
 })
 export class CowListComponent {
   public title: string = "Cow List";

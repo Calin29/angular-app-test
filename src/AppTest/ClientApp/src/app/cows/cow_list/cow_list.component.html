@@ -1,0 +1,22 @@
+<h1>{{ title }}</h1>
+
+<p *ngIf="!cows"><em>Loading...</em></p>
+
+<table class='table table-striped' *ngIf="cows">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Color</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cow of cows">
+      <td>{{ cow.id }}</td>
+      <td>{{ cow.name }}</td>
+      <td>{{ cow.color }}</td>
+      <td>{{ cow.weight }}</td>
+    </tr>
+  </tbody>
+</table>
